@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <title>My Profile</title>
-            <style>
-                header{color:white;
-                background-color:limegreen;
-                padding-top: 1px;
-                text-align: center;
-               }
-        
-            </style>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>My Profile</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia&display=swap">
+        <style>
+        .header_section {
+            color: white;
+            background-color: limegreen;
+            text-align: center;
+            border-radius:20px;
+        }
+        .nav_bar {
+            color: white;
+            background-color: limegreen;
+            font-size: 22px;
+            font-weight: normal;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .nav_bar ul{
+            overflow: auto;
+        }
+        .nav_bar li{
+            float: left;
+            list-style: none;}
+        .nav_bar li a{
+            color:white;
+            margin: 13px 20px;
+        }
+        .nav_bar li a:hover{
+            color: rgb(94, 55, 23);
+        }
+        .footer_section{
+            color:white;
+            background-color: limegreen;
+            text-align: center;
+            border-radius: 20px;
+        }
+       
+    </style>
     </head>
     <body>
-        <header>
+        <div>
+        <header class="header_section">
             <p> <strong>
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     Mamata Yeul &nbsp; &nbsp; &nbsp; &nbsp;
@@ -22,32 +54,37 @@
                     9975587268 &nbsp; &nbsp; &nbsp; &nbsp;
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     &nbsp;mamatayeul9@gmail.com
-                </strong> </p><hr>
-
-                <nav class="navbar">
-                    <a href="home.html" target="My_Frame">HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="techStack.html" target="My_Frame">TECH STACK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="education.html"target="My_Frame">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="project.html" target="My_Frame">PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="hobbies.html"target="My_Frame">HOBBIES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="personal.html" target="My_Frame">PERSONAL DETAILS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="others.html"target="My_Frame">OTHERS</a>
-                </nav>
-            <hr>
+                </strong> </p>
+      
         </header>
-        <iframe name="My_Frame" src="info.html" width="1200px" height="500px"></iframe>
-        <footer align="center">
+        </div>
+        <nav class="nav_bar">     
+            <ul>
+                <li><a href="home.html" target="My_Frame" class="nav_item">HOME</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="techStack.html" target="My_Frame">TECH STACK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="education.html" target="My_Frame">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="project.html" target="My_Frame">PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="hobbies.html" target="My_Frame">HOBBIES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="personal.html" target="My_Frame">PERSONAL DETAILS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="others.html" target="My_Frame">OTHERS</a></li>
+            </ul>
+        </nav>
+   
+        <iframe name="My_Frame" src="info.html" width="1200px" height="450px"
+            background-color="blue" frameborder="0"></iframe>
+        <footer class="footer_section">
             <strong>Follow me&nbsp;&nbsp;
-                <a href="http://www.twitter.com" target="_blank">
-                <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href="https://accounts.google.com/" target="_blank">
+                    <i class="fa fa-google" aria-hidden="true"></i></a>&nbsp;&nbsp;
                 <a href="https://www.linkedin.com/feed/" target="_blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                <a href="http://www.google.com" target="_blank">
-                <i class="fa fa-google" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                <a href="http://www.instagram.com" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
                 <a href="https://www.facebook.com/facebook/" target="_blank">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;    
-        </footer>
-    </body>
-</html>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href="http://www.instagram.com" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href="http://www.twitter.com" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+            </footer>
+        </body>
+
+    </html>
