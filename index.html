@@ -15,7 +15,7 @@
                 background-size: cover;
             }
 
-        header {
+        .header_section{
             color:white;
             background-color:darkblue;
             text-align: center;
@@ -24,15 +24,20 @@
             margin:10px
            
         }
-        nav {
-          
+        .nav_bar{
+         color: white;
             background-color: darkblue;
             font-weight: normal;
-            text-transform: uppercase;
+            text-transform: capitalize;
             text-align: center;
             border-radius: 10px;
         }
-       ul
+        #nav_bar a
+        {
+            margin-right: 40px;
+            text-shadow:5px 4px 6px cadetblue;
+        }
+      .nav_bar ul
         {list-style: none;
             padding: 0;
             margin: 0;
@@ -57,12 +62,14 @@
             border-radius: 10px;
             font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bold;
+            text-shadow: 4px 2px 5px #2c3e50;
+
       
         }
         a:hover{
             background-color: #669900;
         }    
-        footer{
+        .footer_section{
             color:white;
             background-color: darkblue;
             text-align: center;
@@ -72,6 +79,7 @@
      {
         margin: 10px;
         font-style: italic;
+        text-shadow: #669900;
      }
      .footer_span
      {
@@ -79,16 +87,20 @@
         font-size: 20px;
         color: white;
      }
+    
+    
  
     </style>
     </head>
     <body>
-            <header>
+            <header class="header_section">
+                <nav class="nav_bar">
                 <div >
                     <span class="header_span"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp Mamata Yeul </span>
                    <span class="header_span"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp  9975587268 </span> 
                   <span class="header_span"> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp mamatayeul9@gmail.com</span> 
                 </div>
+            </nav>
             </header>
         <nav>
             <ul>
@@ -105,7 +117,7 @@
         <iframe id="frame" name="My_Frame" src="info.html" width="1200px" height="450px"
         frameborder="0"></iframe>
         </div>
-        <footer>
+        <footer class="footer_section">
             <div>
                 <span> Follow me</span>
                 <span class="footer_span">
