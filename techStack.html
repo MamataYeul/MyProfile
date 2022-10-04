@@ -2,59 +2,99 @@
 <html>
     <head>
         <title>Technology Stack</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-        table, tr, th, td { border: 1px solid rgb(26, 5, 9);
-                 border-collapse: collapse;
-                 text-align: center;
-
-      
- 
-      
+            body
+            {
+                color: chartreuse;
+                background-color:cadetblue;
+            }
+        table
+        { 
+            border: 1px solid gray;
+            width: 50%;
+            height:100px;
+            text-align: center;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-left: 300px;
+        
+            
         }
-        .tech_stack,td{
-            border: 1px slid black;
-            border-collapse: collapse; 
-             padding-left: 20px;
+        h2
+        {
+            text-shadow: 2px 5px 2px crimson;
+            text-align: center;
+            
+        }
+        .first
+        {
+            color:white;
+            background-color:black;
+        
+        }
+        .second
+        {
+            color:black;
+            background-color: greenyellow;
+        }
+        tr:nth-child(even)
+        {
+            background-color: blueviolet;
+        }
+
+        tr:nth-child(even):hover
+        {
+            background-color:chocolate;
+        }
+
+        tr:nth-child(odd):hover
+        {
+            background-color:whitesmoke;
         }
      </style>
     </head>
     <body>
         <h2>Technology Stack</h2>
-        <table class="tech_stack">
+        <table>
             <thead>
-                <tr>
+                <tr class="first">
                     <th> Sr. No</th>
                     <th> Technology Stack</th>
                     <th> Rating </th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="second">
                     <td> 1 </td>
                     <td> HTML </td>
                     <td> 4</td>
                 </tr>
 
-                <tr>
+                <tr class="first">
                     <td> 2 </td>
                     <td> CSS </td>
                     <td> 4</td>
                 </tr>
-
-                <tr>
+                <tr class="second">
                     <td> 3 </td>
                     <td> JavaScript </td>
                     <td> 4</td>
                 </tr>
-                <tr>
+                <tr class="first">
                     <td> 4 </td>
                     <td> BootStrap </td>
                     <td> 2 </td>
                 </tr>
-                <tr>
+                <tr class="second">
                     <td> 5 </td>
                     <td> Angular </td>
                     <td> 4 </td>
+                </tr>
+                <tr class="first">
+                    <td> 6</td>
+                    <td> GIT and desktop</td>
+                    <td> 3 </td>
                 </tr>
             </tbody>
         </table>
